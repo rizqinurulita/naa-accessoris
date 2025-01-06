@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Naa Accessories </title>
+    <link rel="stylesheet" href="style.css">
+    <style> /* [CSS dari index.html] */
+
+        .konten-produk {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid-produk {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .kartu-produk {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .kartu-produk img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .info-produk {
+            padding: 1rem;
+        }
+
+        .harga {
+            color: #e44d26;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        th, td {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        .kategori {
+            margin: 2rem 0;
+        }
+
+        .kategori ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .kategori li {
+            margin: 0.5rem 0;
+        } 
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+
+        </ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="saran.html">Saran</a></li>
+        </ul>
+    </nav>
+
+    <main class="konten-produk">
+        <h1>Produk Kami</h1>
+
+        <div class="kategori">
+            <h2>Kategori Produk</h2>
+            <ul>
+                <li>📿 Kalung
+                    <ul>
+                        <li>Choker</li>
+                        <li>Liontin</li>
+                        <li>Rantai</li>
+                    </ul>
+                </li>
+                <li>💍 Gelang
+                    <ul>
+                        <li>Gelang charm</li>
+                        <li>Gelang manik-manik</li>
+                        <li>Gelang karet</li>
+                    </ul>
+                </li>
+                <li>👑 Anting
+                    <ul>
+                        <li>Clip-on</li>
+                        <li>Hoops</li>
+                        <li>Stud</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Barang</th>
+                    <th>Rentang Harga</th>
+                    <th>Bahan</th>
+                    <th>Ketersediaan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kalung</td>
+                    <td>Rp 15.000</td>
+                    <td>Manik-manik</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Gelang</td>
+                    <td>Rp 10.000</td>
+                    <td>Batu alam</td>
+                    <td>Stok Terbatas</td>
+                </tr>
+                <tr>
+                    <td>Anting</td>
+                    <td>Rp 10.000</td>
+                    <td>Logam campuran</td>
+                    <td>Pre-order</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="grid-produk">
+            <div class="kartu-produk">
+                <img src="kalung.jpeg" alt="Kalung Emas">
+                <div class="info-produk">
+                    <h3>Kalung Liontin</h3>
+                    <p>Kalung elegan liontin custom</p>
+                    <p class="harga">Rp 15.000</p>
+                </div>
+            </div>
+            <div class="kartu-produk">
+                <img src="gelang.jpeg" alt="Gelang Perak">
+                <div class="info-produk">
+                    <h3>Gelang Charm </h3>
+                    <p>Gelang dengan gantungan hewan kustom</p>
+                    <p class="harga">Rp 10.000</p>
+                </div>
+            </div>
+            <div class="kartu-produk">
+                <img src="anting.jpeg" alt="Anting Mutiara">
+                <div class="info-produk">
+                    <h3>Anting Clip-on</h3>
+                    <p>Anting dengan model clip-on</p>
+                    <p class="harga">Rp 10.000</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Naa Accessories .

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saran - Naa Accessories</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* [Gaya CSS sebelumnya dari index.html] */
+
+        .konten-umpan-balik {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .form-umpan-balik {
+            background-color: #f5f5f5;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .kelompok-form {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="konten-saran">
+        <h1>Saran</h1>
+        <form class="form-saran" action="#" method="post">
+            <div class="kelompok-form">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <div class="kelompok-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="kelompok-form">
+                <label for="saran">Saran:</label>
+                <textarea id="saran" name="saran" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>
